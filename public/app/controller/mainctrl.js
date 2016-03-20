@@ -8,7 +8,9 @@
 	MainController.$inject = ['$scope'];
 
 	function MainController($scope) {
-		$scope.appVersion =angular.version.full
+		var vm=this;
+		vm.appName="Personal portfolio";
+		vm.appVersion=angular.version.full;
 
 	}
 })();

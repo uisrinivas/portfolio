@@ -2,7 +2,7 @@
 <html lang="en" ng-app="portfolio">
 <head>
 	<meta charset="UTF-8">
-	<title>UiSrinivas |  portfolio </title>
+	<title>uisrinivas |  portfolio </title>
 	<!-- support lib -->
 	<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css">
 	<link rel="stylesheet" href="lib/font-awesome/css/font-awesome.css">
@@ -12,10 +12,26 @@
 </head>
 <body>
 	<!-- controller -->
-	<div ng-controlle="MainController">
-		<p>{{appVersion}}</p>
-			<i class="fa fa-bookmark">Personal portfolio</i>
+	<div  class="container" ng-controller="MainController as vm">
+		<div class="row">
+			<div class="col-sm-4">
+				<i class="fa fa-bookmark">{{vm.appName}}</i>
+    		</div>
+    		<div class="col-sm-4">
+    			{{vm.appVersion}}
+    		</div>
+
+    		<div class="col-sm-4">
+    			Menus goes here
+    		</div>
+		</div>
+
+		<div class="row">
+        <div class="col-md-6">.col-md-6</div>
+	     <div class="col-md-6">.col-md-4</div>
+      </div>
 	</div>
+
 
 
 
