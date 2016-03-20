@@ -1,0 +1,35 @@
+{
+  "name": "portfolio",
+  "description": "Personal portfolio website",
+  "main": "index.js",
+  "authors": [
+    "Srinivas"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "personal",
+    "project",
+    "portfolio"
+  ],
+  "homepage": "https://github.com/uisrinivas/portfolio",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "angular": "^1.5.2",
+    "font-awesome": "^4.5.0"
+  }
+}
