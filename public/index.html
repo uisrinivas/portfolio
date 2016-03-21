@@ -6,6 +6,7 @@
 	<!-- support lib -->
 	<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css">
 	<link rel="stylesheet" href="lib/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="lib/animate.css/animate.css">
 	<!-- custom css -->
 	<link rel="stylesheet" href="css/custom.css">
 	
@@ -15,10 +16,14 @@
 	<div  class="container" ng-controller="MainController as vm">
 		<div class="row">
 			<div class="col-sm-4">
-				<i class="fa fa-bookmark">{{vm.appName}}</i>
+				
+					<p class="animated infinite bounce">
+						{{vm.appName}}
+					</p>
+			
     		</div>
     		<div class="col-sm-4">
-    			{{vm.appVersion}}
+    				<i class="fa fa-bookmark">{{vm.appVersion}}</i>
     		</div>
 
     		<div class="col-sm-4">
