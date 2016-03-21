@@ -5,6 +5,8 @@ var concat = require('gulp-concat');
 var htmlmin = require('gulp-htmlmin');
 var sass = require('gulp-sass');
 var clean = require('gulp-clean');
+var browserSync = require('browser-sync').create();
+var jshint = require('gulp-jshint');
 
 // js task goes here
 gulp.task('js',function(){
@@ -16,6 +18,11 @@ gulp.task('js',function(){
 	.pipe(gulp.dest('dist'));
 })
 
+gulp.task('lint', function() {
+  return gulp.src('public/**/*.js')
+    .pipe(jshint())
+});
+
 // html task goes here
 gulp.task('htmlmin',function(){
 	return gulp.src('public/*.html')
@@ -25,7 +32,7 @@ gulp.task('htmlmin',function(){
 // css task goes here
 gulp.task('css',function(){
 	 return gulp.src('public/css/scss/**/*.scss')
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass())
     .pipe(gulp.dest('public/css/main.css'));
 })
 
@@ -36,9 +43,19 @@ gulp.task('clean',function(){
 	.pipe(clean({force: true}))
 	
 })
-gulp.task('default', ['clean','htmlmin','js']);
+// Static server
+gulp.task('reload', function() {
+    browserSync.init({
+        server: {
+            baseDir: "public"
+        }
+    });
+});
+
+gulp.task('default', ['htmlmin','js','lint','browser']);
 // gulp.task('default', ['css']);
 
 
 gulp.task('html',['htmlmin'])
 gulp.task('css',['css'])
+gulp.task('browser',['reload'])

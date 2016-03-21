@@ -1,0 +1,5 @@
+Personal portfolio website
+
+steps:
+1.createing the basic folder 
+2.installing the packages for client and server side 
