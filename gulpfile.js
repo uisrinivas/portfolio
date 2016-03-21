@@ -7,6 +7,7 @@ var sass = require('gulp-sass');
 var clean = require('gulp-clean');
 var browserSync = require('browser-sync').create();
 var jshint = require('gulp-jshint');
+const jasmine = require('gulp-jasmine');
 
 // js task goes here
 gulp.task('js',function(){
@@ -52,6 +53,12 @@ gulp.task('reload', function() {
     });
 });
 
+//testing
+gulp.task('testing',function(){
+	return gulp.src('test/**/*.js')
+	.pipe(jasmine())
+})
+
 gulp.task('default', ['htmlmin','js','lint','browser']);
 // gulp.task('default', ['css']);
 
@@ -59,3 +66,5 @@ gulp.task('default', ['htmlmin','js','lint','browser']);
 gulp.task('html',['htmlmin'])
 gulp.task('css',['css'])
 gulp.task('browser',['reload'])
+
+gulp.task('test',['testing'])
