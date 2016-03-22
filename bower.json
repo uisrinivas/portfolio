@@ -38,22 +38,26 @@
     "underscore": "^1.8.3",
     "angular-ui-router": "^0.2.18",
     "animate.css": "^3.5.1",
-    "jquery": "^2.2.2"
+    "jquery": "^2.2.2",
+    "d3": "^3.5.16"
   },
   "preen": {
     "jquery": [
       "dist/*.js"
     ],
-    "angular":[
+    "angular": [
       "*.js"
     ],
-    "font-awesome":[
+    "font-awesome": [
       "css/*.css"
     ],
-    "lodash":[
+    "lodash": [
       "dist/*.js"
     ],
-    "moment":[
+    "moment": [
+      "*.js"
+    ],
+    "d3":[
       "*.js"
     ]
   },
