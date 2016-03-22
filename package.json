@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "npm install && npm run packages && npm run build ",
-    "packages":"bower install",
-    "build":"gulp",
+    "packages": "bower install",
+    "build": "gulp",
     "test": "gulp test",
     "server": "node server/server.js"
   },
@@ -28,11 +28,13 @@
   "dependencies": {
     "bower": "^1.7.7",
     "browser-sync": "^2.11.1",
+    "eslint": "^2.4.0",
     "express": "^4.13.4",
     "gulp": "^3.9.1",
     "gulp-changed": "^1.3.0",
     "gulp-clean": "^0.3.2",
     "gulp-concat": "^2.6.0",
+    "gulp-eslint": "^2.0.0",
     "gulp-htmlmin": "^1.3.0",
     "gulp-inject": "^4.0.0",
     "gulp-jasmine": "^2.3.0",
