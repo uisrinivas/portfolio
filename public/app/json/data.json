@@ -1,4 +1,7 @@
 {
 	"name":"srinivas",
-	"gulp":"http://blog.nodejitsu.com/npmawesome-9-gulp-plugins/"
+	"gulp":"http://blog.nodejitsu.com/npmawesome-9-gulp-plugins/",
+	"npm":{
+		"scripts":"http://www.jayway.com/2014/03/28/running-scripts-with-npm/"
+	}
 }

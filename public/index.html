@@ -15,27 +15,31 @@
 	<!-- controller -->
 	<div  class="container" ng-controller="MainController as vm">
 		<div class="row">
-			<div class="col-sm-4">
-				
-					<p class="animated infinite bounce">
-						{{vm.appName}}
-					</p>
-			
+			<div class="col-md-6">
+				<!-- <p class="animated infinite bounce">
+					{{vm.appName}}
+				</p>
+				<i class="fa fa-bookmark">{{vm.appVersion}}</i> -->
+				{{vm.appName}}{{vm.appVersion}}
     		</div>
-    		<div class="col-sm-4">
-    				<i class="fa fa-bookmark">{{vm.appVersion}}</i>
-    		</div>
-
-    		<div class="col-sm-4">
+    		<div class="col-md-6">
     			Menus goes here
     		</div>
 		</div>
 
 		<div class="row">
-	        <div class="col-md-12">
-				<p ng-click="vm.myser()">list of links</p>
+	        <div class="col-md-6">
+				<!-- <p ng-click="vm.myser()">list of links</p> -->
+				links
+	        </div>
+	        <div class="col-md-6">
+	        	col-md-6
 	        </div>
       </div>
+
+      <!-- Main Content -->
+   
+	   
 	</div>
 	<!-- support lib -->
 	<script src="lib/jquery/dist/jquery.js"></script>

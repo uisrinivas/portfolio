@@ -8,6 +8,7 @@ var clean = require('gulp-clean');
 var browserSync = require('browser-sync').create();
 var jshint = require('gulp-jshint');
 const jasmine = require('gulp-jasmine');
+const preen = require('preen')
 
 // js task goes here
 gulp.task('js',function(){
@@ -52,6 +53,9 @@ gulp.task('reload', function() {
         }
     });
 });
+gulp.task('packages', function(cb) {
+  preen.preen({}, cb);
+});
 
 //testing
 gulp.task('testing',function(){
@@ -59,8 +63,8 @@ gulp.task('testing',function(){
 	.pipe(jasmine())
 })
 
-gulp.task('default', ['htmlmin','js','lint','browser']);
-// gulp.task('default', ['css']);
+gulp.task('default', ['packages','htmlmin','js','lint','browser']);
+ // gulp.task('default', ['packages']);
 
 
 gulp.task('html',['htmlmin'])

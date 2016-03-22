@@ -37,6 +37,27 @@
     "foundation": "^5.5.3",
     "underscore": "^1.8.3",
     "angular-ui-router": "^0.2.18",
-    "animate.css": "^3.5.1"
+    "animate.css": "^3.5.1",
+    "jquery": "^2.2.2"
+  },
+  "preen": {
+    "jquery": [
+      "dist/*.js"
+    ],
+    "angular":[
+      "*.js"
+    ],
+    "font-awesome":[
+      "css/*.css"
+    ],
+    "lodash":[
+      "dist/*.js"
+    ],
+    "moment":[
+      "*.js"
+    ]
+  },
+  "resolutions": {
+    "modernizr": "^3.3.1"
   }
 }

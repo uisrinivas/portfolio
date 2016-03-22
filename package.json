@@ -4,7 +4,10 @@
   "description": "Personal portfolio website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm install && npm run packages && npm run build ",
+    "packages":"bower install",
+    "build":"gulp",
+    "test": "gulp test",
     "server": "node server/server.js"
   },
   "repository": {
@@ -38,6 +41,7 @@
     "gulp-sourcemaps": "^1.6.0",
     "gulp-useref": "^3.0.8",
     "jshint": "^2.9.1",
+    "preen": "^1.2.0",
     "react": "^0.14.7",
     "underscore": "^1.8.3",
     "wiredep": "^4.0.0"
