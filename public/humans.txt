@@ -1,0 +1,21 @@
+/* humanstxt.org */
+
+
+/* TEAM */
+Developer : Srinivas.
+ Location: Banglore
+ Email   : uisrinivas@gmail.com
+
+/* THANKS */
+
+
+
+/* SITE */
+ Site Name : UI Srinivas |Portfilio
+ Site URL: https://github.com/uisrinivas/portfolio
+ Last update : 2016/03/23
+ Language: English
+ Doctype: HTML5
+ IDE: Sublime
+ Twitter: 
+ G+: 
