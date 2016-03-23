@@ -42,10 +42,14 @@
     "gulp-sass": "^2.2.0",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-useref": "^3.0.8",
+    "jscs": "^2.11.0",
     "jshint": "^2.9.1",
     "preen": "^1.2.0",
     "react": "^0.14.7",
+    "socket.io": "^1.4.5",
     "underscore": "^1.8.3",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1",
     "wiredep": "^4.0.0"
   },
   "devDependencies": {
