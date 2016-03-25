@@ -50,6 +50,7 @@
     "preen": "^1.2.0",
     "react": "^0.14.7",
     "socket.io": "^1.4.5",
+    "typescript": "^1.8.9",
     "underscore": "^1.8.3",
     "webpack": "^1.12.14",
     "webpack-dev-server": "^1.14.1",
