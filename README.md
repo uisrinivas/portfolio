@@ -6,3 +6,9 @@ Personal portfolio website
 ```steps
 npm start
 ```
+
+
+## TODO
+
+Split gulp -tasks across multiple files
+Clean the Folder Structue 
